@@ -1,21 +1,26 @@
-docker-centos-fdb
-=================
+Docker Cookbook
+===============
 
 Docker scripts for FoundationDB server on CentOS.
 
 Uses official Docker [CentOS image](https://index.docker.io/_/centos/ "Official CentOS image on Docker index").
 
-Adapted from [sql-layer-docker](https://bitbucket.org/mmcm/sql-layer-docker "sql-layer-docker")
+CentOS superviser adapted from [supervisor](https://github.com/Krijger/docker-cookbooks/tree/master/supervisor "supervisor") by Krijger
 
-## Building server image
+FoundationDB configuration adapted from [sql-layer-docker](https://bitbucket.org/mmcm/sql-layer-docker "sql-layer-docker")
+
+## Build supervisor and FoundationDB image
 
 ```bash
-./build-client.sh
-./build-server.sh
+cd centor-supervisor
+./build.sh
+cd centos-fdb
+./build.sh
 ```
 
-## Running server
+## Run server
 
 ```bash
-./run-server.sh
+cd centos-fdb
+./run.sh
 ```
