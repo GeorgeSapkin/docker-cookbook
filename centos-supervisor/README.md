@@ -1,7 +1,7 @@
 CentOS Supervisor
 =================
 
-Docker recepie for CentOS with [Supervisor](http://supervisord.org/ "Supervisor"). Used as a base for other recepies that require long running background tasks.
+Docker recipe for CentOS with [Supervisor](http://supervisord.org/ "Supervisor"). Used as a base for other recepies that require long running background tasks.
 
 Uses official Docker [CentOS image](https://index.docker.io/_/centos/ "Official CentOS image on Docker index").
 

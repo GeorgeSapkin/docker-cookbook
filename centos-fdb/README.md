@@ -1,7 +1,7 @@
 FoundationDB in CentOS
 ======================
 
-Docker recepie for FoundationDB server on CentOS. Requires base [CentOS Supervisor image](https://github.com/GeorgeSapkin/docker-cookbook/tree/master/centos-supervisor "CentOS Supervisor").
+Docker recipe for FoundationDB server on CentOS. Requires base [CentOS Supervisor image](https://github.com/GeorgeSapkin/docker-cookbook/tree/master/centos-supervisor "CentOS Supervisor").
 
 Uses official Docker [CentOS image](https://index.docker.io/_/centos/ "Official CentOS image on Docker index").
 
