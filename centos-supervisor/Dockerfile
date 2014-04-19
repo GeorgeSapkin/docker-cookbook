@@ -2,7 +2,7 @@ FROM centos
 MAINTAINER George Sapkin, "https://github.com/GeorgeSapkin/"
 
 # Update image
-# RUN yum update -y
+RUN yum update -y
 
 # Install supervisor to manage our processes
 # the supervisor config file is more likely to change and is therefore added as a later step
