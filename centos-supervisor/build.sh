@@ -1,3 +1,3 @@
 #! /bin/bash
 
-docker build -t georgesapkin/centos-supervisor .
+docker build --rm=true -t georgesapkin/centos-supervisor .
