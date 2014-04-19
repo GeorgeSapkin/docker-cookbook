@@ -12,6 +12,10 @@ if [ ! -f /etc/foundationdb/fdb.cluster ]; then
     NEWDB=yes
 fi
 
+if [ -d /fdb-data ]; then
+    mkdir /fdb-data
+fi
+
 chmod go+rx /fdb-data
 DATADIR=/fdb-data/$HOSTNAME
 mkdir $DATADIR

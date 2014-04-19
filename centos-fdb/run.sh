@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run georgesapkin/centos-fdb supervisord -c /etc/supervisord.conf
+docker run -v /etc/foundationdb:/etc/foundationdb:rw -P georgesapkin/centos-fdb supervisord -c /etc/supervisord.conf
