@@ -1,0 +1,16 @@
+FROM armhf/ubuntu:xenial
+MAINTAINER George Sapkin, "https://github.com/GeorgeSapkin/"
+
+RUN apt update\
+    && apt install -y\
+        --force-yes\
+        --no-install-recommends\
+        -o Dpkg::Options::='--force-confold'\
+        build-essential\
+        ca-certificates\
+        curl\
+        g++\
+        gcc\
+        git\
+        python\
+    && apt-get clean

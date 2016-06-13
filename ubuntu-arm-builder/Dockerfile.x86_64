@@ -1,0 +1,19 @@
+FROM ubuntu:xenial
+MAINTAINER George Sapkin, "https://github.com/GeorgeSapkin/"
+
+RUN apt-get update\
+    && apt-get install -y\
+        --force-yes\
+        --no-install-recommends\
+        -o Dpkg::Options::='--force-confold'\
+        build-essential\
+        ca-certificates\
+        curl\
+        g++-arm-linux-gnueabihf\
+        gcc-arm-linux-gnueabihf\
+        git\
+        python\
+    && apt-get clean
+
+ENV CC=arm-linux-gnueabihf-gcc\
+    CXX=arm-linux-gnueabihf-g++
